@@ -11,10 +11,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.vinaygaba.creditcardview.CreditCardView;
+import com.chidiebere.medusa.CardActivity;
+import com.chidiebere.medusa.views.CreditCardView;
 
 import io.card.payment.*;
 import io.card.payment.CreditCard;
+
+import static com.chidiebere.medusa.constants.CardType.MASTERCARD;
+import static com.chidiebere.medusa.constants.CardType.VERVE;
+import static com.chidiebere.medusa.constants.CardType.VISA;
 
 public class AddCreditCardActivity extends AppCompatActivity {
 
@@ -39,15 +44,15 @@ public class AddCreditCardActivity extends AppCompatActivity {
         if (extraCardType != null){
             if (extraCardType.equals("MASTERCARD")){
                 cardType = CardType.MASTERCARD;
-                creditCardView.setType(com.vinaygaba.creditcardview.CardType.MASTERCARD);
+                creditCardView.setType(MASTERCARD);
             }
             else if (extraCardType.equals("VISA")){
                 cardType = CardType.VISA;
-                creditCardView.setType(com.vinaygaba.creditcardview.CardType.VISA);
+                creditCardView.setType(VISA);
             }
             else if (extraCardType.equals("VERVE")){
                 cardType = CardType.VERVE;
-                creditCardView.setType(com.vinaygaba.creditcardview.CardType.VERVE);
+                creditCardView.setType(VERVE);
             }
         }
 
@@ -55,13 +60,13 @@ public class AddCreditCardActivity extends AppCompatActivity {
 
         switch (cardType){
             case MASTERCARD:
-                cardLogo.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.mastercard_logo));
+                cardLogo.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),com.chidiebere.medusa.R.drawable.mastercard_logo));
                 break;
             case VISA:
-                cardLogo.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.visa_logo));
+                cardLogo.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),com.chidiebere.medusa.R.drawable.visa_logo));
                 break;
             case VERVE:
-                cardLogo.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.verve_logo));
+                cardLogo.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),com.chidiebere.medusa.R.drawable.verve_logo));
                 break;
         }
 

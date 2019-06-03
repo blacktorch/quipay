@@ -1,1 +1,1 @@
-include ':app', ':CreditCardView', ':lib'
+include ':app', ':lib', ':Medusa'

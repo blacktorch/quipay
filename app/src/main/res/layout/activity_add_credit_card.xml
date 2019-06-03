@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <com.vinaygaba.creditcardview.CreditCardView
+    <com.chidiebere.medusa.views.CreditCardView
         android:id="@+id/card_view"
         android:layout_below="@id/capture_card"
         android:layout_width="fill_parent"
@@ -79,11 +79,16 @@
         app:cardNumberFormat="masked_all_but_last_four"
         app:cardNameTextColor="#cccccc"
         app:isFlippable="true"
-        app:putChip="true"
         app:expiryDateTextColor="#cccccc"
         app:isEditable="true"
         app:validTillTextColor="#cccccc"
         app:hintTextColor = "#cccccc"
+        app:isCardNumberEditable="false"
+        app:isCardNameEditable="false"
+        app:isCvvEditable="false"
+        app:isExpiryDateEditable="false"
+        app:type="mastercard"
+        android:visibility="visible"
         />
 
         <Button
