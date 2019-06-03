@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "90873232609",
+    "firebase_url": "https://quipay-a5528.firebaseio.com",
+    "project_id": "quipay-a5528",
+    "storage_bucket": "quipay-a5528.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90873232609:android:f4d91d31e32c44bc",
+        "android_client_info": {
+          "package_name": "com.egrek.chidiebere.QuiPay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90873232609-q2krcv5stfjgdqp518vg04oqbhjufb8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUlDURkjnAKcpoVIjvKSpoFzX2iMBZ9EY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_home"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/choose_card_type_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <RelativeLayout
+        android:id="@+id/mastercard"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:background="@drawable/ripple_bg">
+
+        <ImageView
+            android:id="@+id/card_type_mastercard"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/mastercard_logo"
+            android:layout_width="64dp"
+            android:layout_height="48dp" />
+        <TextView
+            android:id="@+id/card_mastercard"
+            android:text="MasterCard"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:src="@drawable/ic_keyboard_arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#44ffffff"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/visa"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:clickable="true"
+        android:background="@drawable/ripple_bg">
+
+        <ImageView
+            android:id="@+id/card_type_visa"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/visa_logo"
+            android:layout_width="64dp"
+            android:layout_height="48dp" />
+        <TextView
+            android:id="@+id/card_visa"
+            android:text="Visa"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:src="@drawable/ic_keyboard_arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#44ffffff"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/verve"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:clickable="true"
+        android:background="@drawable/ripple_bg">
+
+        <ImageView
+            android:id="@+id/card_type_verve"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/verve_logo"
+            android:layout_width="64dp"
+            android:layout_height="48dp" />
+        <TextView
+            android:id="@+id/card_verve"
+            android:text="Verve"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:src="@drawable/ic_keyboard_arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#44ffffff"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

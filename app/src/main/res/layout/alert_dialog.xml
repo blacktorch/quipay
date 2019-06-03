@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fefefe">
+
+    <TextView
+        android:id="@+id/dialog_main_text"
+        android:text="Sure about this?"
+        android:textColor="#252525"
+        android:textSize="20sp"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialog_sub_text"
+        android:text="You're about to log out."
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/dialog_main_text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/dialog_divider"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/dialog_sub_text"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"/>
+    <LinearLayout
+        android:layout_below="@id/dialog_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="31">
+        <LinearLayout
+            android:id="@+id/dialog_ok"
+            android:clickable="true"
+            android:background="@drawable/ripple_bg"
+            android:layout_weight="15.45"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_ok_text"
+                android:text="Log Out"
+                android:textColor="#dd3333"
+                android:textSize="16sp"
+                android:padding="20dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>
+
+        <LinearLayout
+            android:id="@+id/dialog_cancel"
+            android:clickable="true"
+            android:background="@drawable/ripple_bg"
+            android:layout_weight="15.45"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_cancel_text"
+                android:text="Cancel"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:padding="20dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

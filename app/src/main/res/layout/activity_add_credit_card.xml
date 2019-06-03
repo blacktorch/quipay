@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.egrek.chidiebere.QuiPay.AddCreditCardActivity"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_card_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="@color/primary"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/card_logo"
+        android:layout_below="@id/add_card_toolbar"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/mastercard_logo"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/card_instruction"
+        android:layout_marginTop="4dp"
+        android:textColor="#222222"
+        android:text="Enter your card details below or"
+        android:textSize="13sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/card_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/capture_card"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/card_instruction"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/ripple_bg">
+
+        <TextView
+            android:id="@+id/capture_card_text"
+            android:text="Capture Card"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_add_a_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.vinaygaba.creditcardview.CreditCardView
+        android:id="@+id/card_view"
+        android:layout_below="@id/capture_card"
+        android:layout_width="fill_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/cardbackground"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginEnd="4dp"
+        app:cardNumberTextColor="#cccccc"
+        app:cardNumberFormat="masked_all_but_last_four"
+        app:cardNameTextColor="#cccccc"
+        app:isFlippable="true"
+        app:putChip="true"
+        app:expiryDateTextColor="#cccccc"
+        app:isEditable="true"
+        app:validTillTextColor="#cccccc"
+        app:hintTextColor = "#cccccc"
+        />
+
+        <Button
+            android:id="@+id/add_card_button"
+            android:enabled="false"
+            android:background="@color/primary"
+            android:text="ADD CARD"
+            android:elevation="4dp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

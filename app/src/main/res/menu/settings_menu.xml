@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar_app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/log_out_item"
+        android:title="Log Out"
+        android:titleCondensed="Log Out"
+        toolbar_app:showAsAction="always"
+        android:icon="@drawable/ic_exit_to_app"
+        android:orderInCategory="1" />
+
+</menu>
