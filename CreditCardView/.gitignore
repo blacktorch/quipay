@@ -13,3 +13,4 @@
 .externalNativeBuild
 *.jar
 /gradle/wrapper
+/app/google-services.json
